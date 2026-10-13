@@ -1,1 +1,89 @@
 /*  your css code here. If applicable */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7fb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 9px;
+    padding: 40px 25px 27px;
+    width: 90%;
+    max-width: 760px;
+    text-align: center;
+}
+
+#verification_heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 3px 0 18px;
+}
+
+#verification_subtext {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 42px;
+}
+
+.code {
+    width: 93px;
+    height: 110px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 50px;
+    text-align: center;
+    color: #555;
+    outline: none;
+}
+
+.code:focus {
+    border-color: #999;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+    display: block;
+    background-color: #eaeaea;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 30px 12px;
+    }
+
+    .code-container {
+        gap: 6px;
+    }
+
+    .code {
+        width: min(13vw, 60px);
+        height: 70px;
+        font-size: 35px;
+    }
+}

@@ -1,16 +1,36 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h2 id="verification_heading">Verify Your Account</h2>
 
+        <p id="verification_subtext">
+            We emailed you the six digit code to acciojob@email.com
+            Enter the code below to confirm your email address.
+        </p>
+
+        <div class="code-container">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 1">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 2">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 3">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 4">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 5">
+            <input type="text" class="code" maxlength="1" inputmode="numeric" aria-label="Digit 6">
+        </div>
+
+        <small class="info">
+            This is design only. We didn't actually send you an email as we
+            don't have your email, right?
+        </small>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
-
 </html>
